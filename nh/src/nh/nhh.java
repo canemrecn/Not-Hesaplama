@@ -1,0 +1,41 @@
+package nh;
+
+import java.util.Scanner;
+
+public class nhh {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Adinizi Giriniz: ");
+		String isimString = scanner.nextLine();
+		
+		System.out.println("Soyisminizi Giriniz: ");
+		String soyisimString = scanner.nextLine();
+		
+		System.out.println("Dersi Giriniz: ");
+		String dersİsmiString = scanner.nextLine();
+		
+		System.out.println("Vize 1 Notunuzu Giriniz: ");
+		double vize1 = scanner.nextDouble();
+		
+		System.out.println("Vize 2 Notunuzu Giriniz: ");
+		double vize2 = scanner.nextDouble();
+		
+		System.out.println("Final Notunuzu Giriniz: ");
+		double finalNot = scanner.nextDouble();
+		
+		double sonuc = (vize1*0.3) + (vize2*0.3) + (finalNot*0.4);
+		
+		if(sonuc>=60)
+		{
+			System.out.println(isimString + " " + soyisimString + " adli ogrenci " + dersİsmiString + " dersinden " + sonuc + " ortalama ile gecmistir.");
+			
+		}
+		else {
+			System.out.println("Dersten Kaldiniz");
+		}
+		
+		
+	}
+
+}
